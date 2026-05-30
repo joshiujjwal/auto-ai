@@ -121,3 +121,24 @@ auto-ai/
 ## License
 
 Private — All rights reserved.
+
+## 🚀 Improvement Proposals
+
+### First-Principles Analysis
+- The name suggests automation plus AI, but the README needs to define **what is being automated and for whom**.
+- Automation products succeed when they remove repeated human decision cost; generic AI assistance is not enough.
+- The likely value is orchestration across tools or workflows, which means integrations and reliability become core product concerns.
+- If the system makes autonomous changes, observability and approval checkpoints matter as much as intelligence.
+
+### Key Risks & Assumptions
+- **Autonomy is often overestimated** — users may want recommendations, not fully automatic execution.
+- **The integration surface may dominate the roadmap** if many external tools are in scope.
+- **Failure handling is underdescribed** — automated systems need clear rollback and audit trails.
+- **The product may be too broad without a single anchored workflow.**
+
+### Concrete Improvement Ideas
+1. **Define one automation job-to-be-done** — e.g. triaging inbound requests, generating reports, or updating project systems.
+2. **Add a human-in-the-loop approval model** — especially if the system can take external actions.
+3. **Document the event flow** — trigger, plan, act, verify, and recover from failure.
+4. **Start with one integration pair** — prove value in a narrow workflow before becoming a general platform.
+5. **Expose action logs and replayability** — trust depends on traceability.
